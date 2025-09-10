@@ -1,0 +1,11 @@
+# 排除所有文件和目录
+*
+
+# 允许 index.html
+!index.html
+!favicon.ico
+!asset-manifest.json
+
+# 允许的目录（及其内容）
+!static
+
