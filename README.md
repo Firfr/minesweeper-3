@@ -2,8 +2,15 @@
 
 当前制作镜像版本(或截止更新日期)：2025年09月10日
 
-首先感谢原作者的开源。[原项目地址](https://github.com/laoqiu233/minesweeper-react)  
+首先感谢原作者的开源。  
 原项目没有中文和docker镜像，我制作了docker镜像，基于原项目编译好的分支`gh-pages`制作而成。
+
+- 原项目地址
+  - 官网 https://laoqiu233.github.io/minesweeper-react
+  - GitHub仓库 https://github.com/laoqiu233/minesweeper-react
+- 我汉化和构建docker镜像的仓库
+  - GitHub仓库 https://github.com/Firfr/minesweeper-3
+  - Gitee仓库 https://gitee.com/firfe/minesweeper-3
 
 具体汉化了那些内容，请参考[翻译说明](./翻译说明.md)。
 
@@ -25,9 +32,24 @@
 
 容器内部端口`5140`，可通过设置参数来指定监听端口。
 
-```bash
-swr.cn-north-4.myhuaweicloud.com/firfe/minesweeper-3:2025.09.10
-```
+- 国内仓库
+  - AMD64镜像
+    ```bash
+    swr.cn-north-4.myhuaweicloud.com/firfe/minesweeper-3:2025.09.10
+    ```
+  - ARM64镜像
+    ```bash
+    swr.cn-north-4.myhuaweicloud.com/firfe/minesweeper-3:2025.09.10-arm64
+    ```
+- DockerHub仓库
+  - AMD64镜像
+    ```bash
+    firfe/minesweeper-3:2025.09.10
+    ```
+  - ARM64镜像
+    ```bash
+    firfe/minesweeper-3:2025.09.10-arm64
+    ```
 
 ### docker run 命令部署
 
